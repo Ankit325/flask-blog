@@ -10,8 +10,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div>Hello {{name}}</div>
-    <a href="/hello2">Link to hello2</a>
+    {% for n in name %}
+    <div>Hello {{n}}</div>
+    {% endfor %}
+    <a href="/hello2">Link to hello2</a><br>
     <a href="/fill-form">Link to enter name</a>
 </body>
 </html>
